@@ -58,7 +58,7 @@ async function putJogo(id, updateJogo){
 
 async function deleteJogo(id){
 
-    const url = `http://localhost:8080/v1/controle-jogos/jogo/delete/${id}`
+    const url = `http://localhost:8080/v1/controle-jogos/jogo/${id}`
     const options = {
         method: 'DELETE',
     }
@@ -69,22 +69,23 @@ async function deleteJogo(id){
 }
 
 const novoJogo = {
-    "nome": "Forza Horizon 5",
-    "data_lancamento": "2021-11-01",
+    "nome": "Mario Bros",
+    "data_lancamento": "1986-06-03",
     "versao": "1.0",
-    "tamanho": "116 GB",
-    "descricao": "Forza Horizon 5 é um jogo eletrônico de corrida",
-    "foto_capa": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xbox.com%2Fpt-BR%2Fgames%2Fforza-horizon-5&psig=AOvVaw2qvtwSGdez76DByo1Ic4yf&ust=1745591217524000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjBvpbw8IwDFQAAAAAdAAAAABAE",
+    "tamanho": "500KB",
+    "descricao": "Jogo bem legal para diversão",
+    "foto_capa": "https://foto.jpg",
     "link": "https://dowloadJogo.zip"
 }
 
 const updateJogo = {
-    "nome": "Forza Horizon 5",
-    "data_lancamento": "2021-11-01",
-    "versao": "1.1",
-    "tamanho": "118 GB",
-    "descricao": "Forza Horizon 5 é um jogo eletrônico de corrida",
-    "foto_capa": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xbox.com%2Fpt-BR%2Fgames%2Fforza-horizon-5&psig=AOvVaw2qvtwSGdez76DByo1Ic4yf&ust=1745591217524000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjBvpbw8IwDFQAAAAAdAAAAABAE",
+    "nome": "Mario Bros - Teste",
+    "data_lancamento": "1986-06-03",
+    "versao": "1.0",
+    "tamanho": "500KB",
+    "descricao": "Jogo bem legal para diversão",
+    "foto_capa": "https://foto.jpg",
     "link": "https://dowloadJogo.zip"
 }
+
 
